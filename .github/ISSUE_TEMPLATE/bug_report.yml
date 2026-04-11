@@ -1,0 +1,65 @@
+name: バグ報告
+description: バグや問題を報告してください
+labels: ["bug"]
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: バグの説明
+      description: 発生している問題について詳しく説明してください
+      placeholder: "例：Issueからプロジェクト生成時にファイルが正しく作成されない"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 再現手順
+      description: 問題を再現するための手順を詳しく記載してください
+      placeholder: |
+        例：
+        1. GitHubでIssueを作成
+        2. Claude Feature Generatorワークフローが起動
+        3. 生成されたファイルが不完全
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 期待する動作
+      description: 本来どのような動作をするべきかを説明してください
+      placeholder: "例：Issue内容に基づいたプロジェクトファイルが正しく生成される"
+    validations:
+      required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: 実際の動作
+      description: 実際に何が起こっているかを説明してください
+      placeholder: "例：ファイルの一部が欠落、または内容が不正"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境情報
+      description: 使用している環境について教えてください
+      placeholder: |
+        例：
+        - GitHub Actions: ubuntu-latest
+        - Claude API: claude-sonnet-4-20250514
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット
+      description: 問題を示すスクリーンショットがあれば添付してください
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 追加情報
+      description: その他、問題の解決に役立つ情報があれば記載してください
+    validations:
+      required: false
