@@ -18,7 +18,7 @@ body:
       placeholder: |
         例：
         1. GitHubでIssueを作成
-        2. Claude Feature Generatorワークフローが起動
+        2. Issue を起点に処理が起動
         3. 生成されたファイルが不完全
     validations:
       required: true
